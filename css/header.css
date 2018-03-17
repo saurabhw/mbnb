@@ -1,0 +1,85 @@
+
+.number{
+	width:3em;
+}
+ 
+.dateclass{
+    width:100%;
+	
+}
+
+.dateclass.placeholderclass::before{
+    
+	width:100%;
+    content:attr(placeholder);
+    background-color:none;
+	color:silver;
+}
+
+
+  
+#pac-input {
+	width:192px;
+	margin-left:-1em;
+}
+
+
+#checkin, #checkout{
+	width:160px;
+}  
+
+#guests{
+	width:84px;
+}
+
+.navbar{
+	/*font-size:.1em;*/
+}
+
+.profile-pic{
+	margin-top:1em;
+	width:3.5em;
+	height:auto;
+}
+
+#nav .form-control {
+	border-radius:1em;
+}
+
+#brand{
+	width:6em;
+	height:1.7em;
+	margin-left:.1em;
+	margin-right:.7em;
+	margin-top:0.2em;
+}
+
+#homeIcon, #messageIcon, #smile{
+	font-size:1.6em;
+	
+}
+
+.small{
+	font-size:.9em;
+	
+}
+
+.pac-container {
+    /*background-color: red ;*/	
+	width:30em !important;
+	
+}
+
+.pac-icon{
+	display:none;
+}
+
+
+  
+  
+
+
+
+
+
+

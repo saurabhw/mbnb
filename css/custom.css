@@ -1,0 +1,164 @@
+/* your styles go here */
+
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+  
+}
+
+/*socal icons in login modal*/
+
+p.social a {
+  margin-left: 10px;
+  color: #fff;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  line-height: 50px;
+  font-size: 25px;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+p.social a.facebook {
+  background-color: #4460ae;
+}
+p.social a.gplus {
+  background-color: #c21f25;
+}
+p.social a.instagram {
+  background-color: #cd4378;
+}
+p.social a.twitter {
+  background-color: #00aced;
+}
+
+
+#frm-landingPage1-submit ,#frm-landingPage1-submit2, #frm-landingPage1-text, #frm-landingPage1-text2	{
+	width:90%;
+	font-family: "Algerian", Georgia, Serif;
+	
+}
+
+
+.input-group-btn{
+	font-size: 1em;
+}
+
+.above1, .above2{
+	background:none;
+	color:white;
+	border:none;
+    font-family: "AR DECODE", Georgia, Serif;
+	text-transform: none;
+}
+
+#aboutUs{
+	font-size:1.5em;
+	letter-spacing: 0.1em;
+	color:white;
+	font-family: "AR DECODE", Georgia, Serif;
+}
+
+
+
+.topRightText{
+	font-size:1.3em;
+	letter-spacing: 0.1em;
+	color:white;
+	font-family: "AR DECODE", Georgia, Serif;
+}
+
+#whatToBe{
+	margin-top:3em;
+}
+
+
+/*input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: silver;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }*/
+  
+  
+.booking{
+	border-radius:1em;
+	background:none;
+	color:silver;
+}  
+
+.booking::placeholder{
+	color:silver;
+	
+} 
+
+/*FOR AUTO COMPLETE*/
+.pac-container {
+    /*background-color: red ;*/	
+	width:30em !important;
+	
+}
+
+.pac-icon{
+	display:none;
+}
+ 
+@media (min-width: 767px) {
+	#pac-input{
+		width:20em;
+	}
+	
+	#Guests{
+		width:8em;
+	}
+}
+
+#logIn{
+	cursor:pointer;
+}
+
+
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
+	margin:16px;
+}

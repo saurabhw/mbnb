@@ -1,0 +1,515 @@
+.top-center{
+	position: absolute;
+    top: 0;
+	right: 45%;
+}
+
+.number{
+	width:3em;
+	
+}
+
+ 
+  
+  
+  
+  
+.dateclass{
+    width:100%;
+	
+}
+
+.dateclass.placeholderclass::before{
+    
+	width:100%;
+    content:attr(placeholder);
+    background-color:none;
+	color:silver;
+}
+
+
+  
+#where {
+	width:100px;
+}
+
+#check-in, #check-out{
+	width:160px;
+}  
+
+#guests{
+	width:84px;
+}
+
+.navbar{
+	/*line-height:50px;*/
+}
+
+.profile-pic{
+	margin-top:1em;
+	width:4em;
+	height:auto;
+}
+
+#nav .form-control {
+	border-radius:1em;
+}
+
+#brand{
+	width:5em;
+	height:auto;
+}
+
+#homeIcon, #messageIcon, #smile{
+	font-size:1.6em;
+	
+}
+
+
+
+
+/*
+JUMBOTRON
+*/
+
+.jumbotron{
+	margin-bottom:0px;
+}
+
+.main-jumbotron {
+  position: relative;
+  padding-bottom: 80px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  background: url('../img/no-image.jpg') center center no-repeat;
+  background-size: cover;
+  min-height:450px;
+}
+
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  
+
+
+/*
+PHOTO MODAL
+*/
+  
+  
+  * {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 60;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*overflow: auto;*/
+  background: rgba(0, 0, 0, 0.8);
+  
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  
+  max-width: 1200px;
+  
+}
+
+/* The Close Button */
+.close_new {
+  
+  color: red;
+  
+  font-size: 35px;
+  font-weight: bold;
+  opacity:1;
+}
+
+.close_new:hover,
+.close_new:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+
+/*top*/
+
+#top {
+  background: #555555;
+  padding: 10px 0;
+  /*max-height:50px;*/
+  
+}
+#top .offer {
+  color: #fff;
+}
+#top .offer .btn {
+  text-transform: uppercase;
+}
+@media (max-width: 991px) {
+  #top .offer {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  #top {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+#top a {
+  color: #fff;
+}
+#top ul.menu {
+  padding-top: 5px;
+  margin: 0;
+  text-align: right;
+  font-size: 15px;
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  #top ul.menu {
+    text-align: center;
+  }
+}
+#top ul.menu > li {
+  display: inline-block;
+}
+#top ul.menu > li a {
+  color: #eeeeee;
+}
+#top ul.menu > li + li:before {
+  content: "|\00a0";
+  padding: 0 5px;
+  color: #f7f7f7;
+}
+#top ul.menu > .active {
+  color: #999999;
+}
+
+
+#familyPhoto{
+	position:absolute;
+	width:15em; 
+	height:13em; 
+	top:-9.6em; 
+	left:-1em;
+	z-index:10;
+}
+
+#familyPhotoCaption
+{
+	position:absolute; 
+	top:50px; 
+	left:0em; 
+	font-family:Algerian; 
+	letter-spacing: 0.6em;
+	text-align:center;
+	z-index:10;
+}
+
+#welcomeMessage
+{
+	text-align:center; 
+	font-family:Edwardian Script ITC; 
+	margin-top:4em;
+	font-size:2em;	 
+}
+
+
+
+#nav-bar{
+	width:100%;
+	max-height:1em;
+	min-height:1em;
+	z-index:10;
+}
+
+
+
+
+
+/* Fixing the topbar */
+
+.topbar.affix{
+    position:fixed;
+    top:0;
+    right:0;
+}
+
+.leftPanel.affix{
+   position:fixed;
+    top:3.31em;
+    left:4.4em;
+	width:28.5%;
+}
+
+.leftPanel.stop{
+   position: absolute;
+   padding-top: 89em;/*1240px;*/
+   width:25.7em;
+   /*left:4.4em;*/
+}
+
+
+
+
+#rate{
+	background-color:black; 
+	color:white; 
+	font-size:1.5em; 
+	margin-top:-1.5em;
+}
+
+.amenitiesIcon{
+	/*border: 1px solid black;*/
+	font-size:2em;
+	/*border-radius:1500px;*/
+	padding:10px;
+	
+}
+
+/*.strike{
+	color:lightgray;
+	text-decoration: line-through;
+	border-color:lightgray;
+	
+}*/
+
+.strike {
+  color:silver;
+  /*font-size: 4em;*/
+  line-height: 1em;
+  position: relative;
+}
+.strike::after {
+  border-bottom: 0.095em solid black;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.amenities{
+	margin:1em;
+	font-size:.8em;
+}
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+
+font-size: 3em !important;
+margin-right:.4em;
+
+
+}
+
+.amenitiesIcon{
+	margin-left:.6em;
+	margin-right:.4em;
+}
+
+.fa-minus-circle{
+	font-size:1.2em;
+	color:red;
+	margin-right:.3em;
+}
+
+.fa-plus-circle{
+	font-size:1.2em;
+	margin-left:.3em;
+}
+
+
+
+#showMore{
+	cursor:pointer
+}
+
+#ResponseModal, #CommentModal{
+	z-index:600;
+}
+
+
+
+#map2{
+	width: 20em; 
+	height: 12em;
+}
+
+@media screen and (min-width: 480px) {
+    #map2{
+	width: 50em; 
+	height: 30em;
+	}
+}
+
+#familyPhotoAbout{
+	width:100%;
+}
+
+/*For google maps */
+ #map {
+  height: 30em;
+  width: 100%;
+ }
+ 
+ 
+ /*For loading spinners*/
+ 
+ .loader {
+	position: relative;
+	left: 40%;
+	top: 50%; 
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*For property imgs modal*/
+.modalPropertyImg{
+	width: 10%;
+}
+
+/*adding a scroll to property image modal*/
+
+#propImgModal{
+	overflow: scroll;
+	max-height:20em;
+}
+
+
+
+.questionSymbol{
+	 margin-right:1px;
+	 font-size:2em;
+	 font-family:Century;
+ }
+ 
+ .answerSymbol{
+	 font-size:1.2em;
+ }

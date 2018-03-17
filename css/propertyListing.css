@@ -1,0 +1,104 @@
+ .box {
+  background: #fff;
+  margin: 0 0 30px;
+  border: solid 1px #e6e6e6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.box .box-header {
+  background: #f7f7f7;
+  margin: -20px -20px 20px;
+  padding: 20px;
+  border-bottom: solid 1px #eeeeee;
+}
+.box .box-header:before,
+.box .box-header:after {
+  content: " ";
+  display: table;
+}
+.box .box-header:after {
+  clear: both;
+}
+.box .box-footer {
+  background: #f7f7f7;
+  margin: 30px -20px -20px;
+  padding: 20px;
+  border-top: solid 1px #eeeeee;
+}
+.box .box-footer:before,
+.box .box-footer:after {
+  content: " ";
+  display: table;
+}
+.box .box-footer:after {
+  clear: both;
+} 
+  
+  
+  
+  
+.dateclass{
+    width:100%;
+	
+}
+
+.dateclass.placeholderclass::before{
+    
+	width:100%;
+    content:attr(placeholder);
+    background-color:none;
+	color:silver;
+}
+
+
+  
+#where {
+	width:100px;
+}
+
+#check-in, #check-out{
+	width:160px;
+}  
+
+#guests{
+	width:84px;
+}
+
+.navbar{
+	/*line-height:50px;*/
+}
+
+.profile-pic{
+	margin-top:1em;
+	width:4em;
+	height:auto;
+}
+
+#nav .form-control {
+	border-radius:1em;
+}
+
+#brand{
+	width:5em;
+	height:auto;
+}
+
+#homeIcon, #messageIcon, #smile{
+	font-size:1.6em;
+	
+}
+
+
+#header{
+	font-family:"Edwardian Script ITC";
+}
+
+
+
+
+
+
