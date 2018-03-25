@@ -27,3 +27,38 @@ function changeShortDesc() {
   xhttp.open("GET", "changeShortDesc.php?shortDesc="+encodeURIComponent(shortDesc)+"&propId="+propID, true);
   xhttp.send();
 }
+
+
+
+/*Adding a new home*/
+
+function addNewHome() {
+	
+	var http = new XMLHttpRequest();
+	var url = "addNewHome.php";
+	var uncodedEmail = document.getElementById('uncodedEmail').innerText;
+	var email = document.getElementById('decodedEmail').innerText;
+	
+	var params = "email="+email;
+
+	//"imgId=Henry&lname=Ford"
+	http.open("POST", url, true);
+
+	//Send the proper header information along with the request
+	http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+	http.onreadystatechange = function() {//Call a function when the state changes.
+		if(http.readyState == 4 && http.status == 200) {
+			//location.replace("http://localhost/mbnb_git/mbnb/myHomes.php?email="+uncodedEmail);
+		location.replace("https://www.missionsbnb.com/myHomes.php?email="+uncodedEmail);
+			
+			
+		}
+	}
+	http.send(params);
+  
+  
+  
+  
+  
+}

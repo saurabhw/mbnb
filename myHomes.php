@@ -4,7 +4,7 @@ require_once  'db.php';
 $email = $mysqli->escape_string(base64_decode($_GET['email']));
 
 
-$sql = "SELECT * FROM property WHERE property.owned_by_user_email='$email'";
+$sql = "SELECT * FROM property WHERE property.owned_by_user_email='$email' ORDER BY date_added DESC";
 $resultHomes = $mysqli->query($sql);
 
 ?>
@@ -87,8 +87,10 @@ $resultHomes = $mysqli->query($sql);
 		
 		<h2 class="text text-center" id="header"> Your Homes<span id="demo"></span></h2>
 		<div class="container">
-			<div class="row">	
-				<div class="text-center"><h3><a href="emptyHost.php"><button class="btn btn-warning" type="button">Add a new Home here</button></a></h3></div>
+			<div class="row">
+				<span id="uncodedEmail" class="hidden"><?php echo $_GET['email'];?></span>
+				<span id="decodedEmail" class="hidden"><?php echo $email;?></span>
+				<div class="text-center"><h3><button class="btn btn-warning" type="button" onclick="addNewHome()" >Add a new Home here</button></h3></div>
 			</div>
 		</div>
 		

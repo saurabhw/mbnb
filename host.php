@@ -10,6 +10,35 @@ $resultPropertyDetail = $mysqli->query($sqlPropertyDetail);
 
 $property = $resultPropertyDetail->fetch_assoc();
 ?>
+
+
+
+
+<?php 
+
+
+$sqlCheckIfNewHome = "SELECT * FROM features WHERE property_id=$propertyId";
+
+$resultCheckIfNewHome = $mysqli->query($sqlCheckIfNewHome);
+
+$rowcount = mysqli_num_rows($resultCheckIfNewHome);
+
+if($rowcount == 0){
+	
+	
+	$sqlInsertIntoFeatures = "INSERT INTO features(property_id, Twin_count, FullCount, Queen_count, King_count) VALUES ($propertyId, '0', '0', '0', '0')";
+	
+	$mysqli->query($sqlInsertIntoFeatures);
+	
+	//might have to do hte same with dates table
+	
+}
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
